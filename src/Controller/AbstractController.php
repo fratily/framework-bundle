@@ -18,5 +18,5 @@ namespace Fratily\Bundle\Framework\Controller;
  */
 abstract class AbstractController extends \Fratily\Kernel\Controller\AbstractController{
 
-
+    use \Fratily\Bundle\Twig\Controller\Traits\TwigTrait;
 }
