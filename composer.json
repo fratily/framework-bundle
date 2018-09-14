@@ -1,0 +1,27 @@
+{
+    "name": "fratily/framework-bundle",
+    "type": "library",
+    "keywords": [
+        "fratily",
+        "bundle",
+        "framework"
+    ],
+    "authors": [
+        {
+            "name": "Kento Oka",
+            "email": "kento-oka@kentoka.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.0",
+        "fratily/kernel": "dev-master",
+        "fratily/twig-bundle": "dev-master",
+        "fratily/http-message": "^0.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fratily\\Bundle\\Framework\\": "src/"
+        }
+    }
+}
