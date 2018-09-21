@@ -16,7 +16,7 @@
     "require": {
         "php": "^7.0",
         "fratily/kernel": "^0.0.2",
-        "fratily/twig-bundle": "^0.0.2",
+        "fratily/twig-bundle": "^0.0.3",
         "fratily/http-message": "^0.4.0"
     },
     "autoload": {
