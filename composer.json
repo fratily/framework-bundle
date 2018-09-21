@@ -16,7 +16,7 @@
     "require": {
         "php": "^7.0",
         "fratily/kernel": "dev-master",
-        "fratily/twig-bundle": "^0.0.5",
+        "fratily/twig-bundle": "dev-master",
         "fratily/http-message": "^0.4.0"
     },
     "autoload": {
