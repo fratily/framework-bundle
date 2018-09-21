@@ -23,6 +23,5 @@
         "psr-4": {
             "Fratily\\Bundle\\Framework\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
