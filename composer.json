@@ -15,7 +15,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "fratily/kernel": "^0.1.3",
+        "fratily/kernel": "^0.1.4",
         "fratily/twig-bundle": "^0.1.2",
         "fratily/http-message": "^0.4.0"
     },
