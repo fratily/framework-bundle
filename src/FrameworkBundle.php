@@ -17,4 +17,9 @@ use Fratily\Kernel\Bundle\Bundle;
 
 class FrameworkBundle extends Bundle{
 
+    public static function dependBundles(){
+        return [
+            \Fratily\Bundle\Twig\TwigBundle::class,
+        ];
+    }
 }
