@@ -1,1 +1,1 @@
-# Fratily Skeleton Bundle
+# Fratily Framework Bundle
