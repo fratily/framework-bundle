@@ -18,5 +18,23 @@ namespace Fratily\Bundle\Framework\Controller;
  */
 abstract class AbstractController extends \Fratily\Kernel\Controller\AbstractController{
 
-    use \Fratily\Bundle\Twig\Controller\Traits\TwigTrait;
+    /**
+     * Twigを通じてレスポンスを生成する
+     *
+     * @param   string  $path
+     *  Twigテンプレートファイルパス
+     * @param   mixed[] $context
+     *  Twigに渡す値の連想配列
+     *
+     * @throws  \LogicException
+     */
+    protected function render(string $path, array $context = []){
+        if(!$this->getKernel()->getContainer()->has("twig")){
+            throw new \LogicException();
+        }
+
+        $this->getResponseFactory()->createResponse()->getBody()->write(
+            $this->getKernel()->getContainer()->get("twig")->render($path, $context)
+        );
+    }
 }

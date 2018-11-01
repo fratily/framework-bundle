@@ -13,13 +13,15 @@
  */
 namespace Fratily\Bundle\Framework;
 
-use Fratily\Kernel\Bundle\Bundle;
+class FrameworkBundle extends \Fratily\Kernel\Bundle\Bundle{
 
-class FrameworkBundle extends Bundle{
+    /**
+     * {@inheritdoc}
+     */
+    public function commandRegister(
+        \Symfony\Component\Console\Application $app,
+        array $options = []
+    ): void{
 
-    public static function dependBundles(): array{
-        return [
-            \Fratily\Bundle\Twig\TwigBundle::class,
-        ];
     }
 }
