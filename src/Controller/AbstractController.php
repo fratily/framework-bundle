@@ -33,8 +33,11 @@ abstract class AbstractController extends \Fratily\Kernel\Controller\AbstractCon
             throw new \LogicException();
         }
 
-        $this->getResponseFactory()->createResponse()->getBody()->write(
+        $response   = $this->generateResponse(200);
+        $response->getBody()->write(
             $this->getKernel()->getContainer()->get("twig")->render($path, $context)
         );
+
+        return $response;
     }
 }
