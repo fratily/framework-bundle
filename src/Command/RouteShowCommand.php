@@ -64,8 +64,8 @@ HELP;
             $table->addRow([
                 $route->getName(),
                 $route->getPath(),
+                implode(", ", array_keys($route->getAllows())),
                 $route->getHost(),
-                implode(", ", $route->getAllows())
             ]);
         }
 
