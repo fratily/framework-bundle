@@ -11,7 +11,7 @@
  * @license     MIT
  * @since       1.0.0
  */
-namespace Fratily\Bundle\Framework\Controller;
+namespace Fratily\Bundle\Framework\Command;
 
 use Fratily\Router\RouteCollector;
 use Symfony\Component\Console\Command\Command;

@@ -22,6 +22,8 @@ class FrameworkBundle extends \Fratily\Kernel\Bundle\Bundle{
         \Symfony\Component\Console\Application $app,
         array $options = []
     ): void{
-
+        $app->add(
+            new Command\RouteShowCommand($this->getKernel()->getRouteCollector())
+        );
     }
 }
